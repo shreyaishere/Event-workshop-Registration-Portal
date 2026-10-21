@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <rect width="800" height="450" fill="#0b1329"/>
+  <!-- Subdued ambient lighting -->
+  <circle cx="400" cy="225" r="280" fill="#1e3a8a" opacity="0.18"/>
+  <circle cx="400" cy="225" r="160" fill="#2563eb" opacity="0.12"/>
+  <!-- Stage & Room Perspective lines -->
+  <line x1="100" y1="450" x2="300" y2="280" stroke="#334155" stroke-width="2"/>
+  <line x1="700" y1="450" x2="500" y2="280" stroke="#334155" stroke-width="2"/>
+  <rect x="250" y="160" width="300" height="120" rx="12" fill="#0f172a" stroke="#2563eb" stroke-width="2"/>
+  <!-- Play Button Icon -->
+  <circle cx="400" cy="220" r="36" fill="#2563eb" opacity="0.9"/>
+  <polygon points="392,204 416,220 392,236" fill="#ffffff"/>
+  <!-- Title in poster -->
+  <text x="400" y="325" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="700">Behind the Room: Crafting roster</text>
+  <text x="400" y="352" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="14">An inside look at our speaker curation and interactive workshop formats</text>
+</svg>

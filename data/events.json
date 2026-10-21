@@ -1,0 +1,247 @@
+[
+  {
+    "id": "evt-web-perf",
+    "title": "High-Performance Web Architecture & Core Web Vitals",
+    "category": "Web Development",
+    "type": "Masterclass",
+    "description": "Deep dive into rendering pipelines, memory profiling, bundle optimization, and latency budgeting.",
+    "longDescription": "A rigorous technical masterclass tailored for full-stack engineers aiming to optimize sub-second user experiences. We cover DOM render tree construction, thread execution models, memory leak detection with Chrome DevTools, asset pipeline compression, dynamic imports, and modern server-driven architecture.",
+    "date": "2026-11-14",
+    "startTime": "09:30",
+    "endTime": "13:30",
+    "location": "Auditorium A, Tech Hub Bengaluru & Virtual",
+    "speaker": "Arjun Sundaram",
+    "speakerTitle": "Principal Performance Engineer at ScaleWorks",
+    "speakerBio": "Arjun leads web infrastructure at ScaleWorks and has architected platforms serving over 50 million concurrent users across Asia.",
+    "price": "₹1,999",
+    "priceValue": 1999,
+    "availableSeats": 18,
+    "totalSeats": 60,
+    "image": "assets/images/perf_workshop.svg",
+    "alt": "Abstract technical architecture schematic with performance metrics",
+    "requirements": [
+      "Proficiency with JavaScript (ES6+) and modern web standards",
+      "Laptop with Node.js 20+ and Chrome Canary installed",
+      "Basic understanding of browser network and performance panels"
+    ],
+    "learningOutcomes": [
+      "Master Chrome DevTools Performance Profiler and flame graph reading",
+      "Reduce Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS)",
+      "Implement advanced code splitting and Tree Shaking strategies",
+      "Eliminate main thread blocking execution"
+    ],
+    "agenda": [
+      { "time": "09:30 - 10:15", "topic": "The Modern Browser Engine: Parse, Style, Layout, Paint, Composite" },
+      { "time": "10:15 - 11:30", "topic": "Hands-On Profiling: Diagnosing Memory Leaks and Long Tasks" },
+      { "time": "11:30 - 11:45", "topic": "Networking Break & Peer Code Review" },
+      { "time": "11:45 - 13:00", "topic": "Advanced Asset Optimization & Critical Path Optimization" },
+      { "time": "13:00 - 13:30", "topic": "Live Architecture Teardown & Interactive Q&A" }
+    ],
+    "duration": "4 Hours",
+    "format": "Hybrid"
+  },
+  {
+    "id": "evt-cloud-k8s",
+    "title": "Zero-Trust Cloud Infrastructure & Kubernetes at Scale",
+    "category": "Cloud & DevOps",
+    "type": "Workshop",
+    "description": "Architect resilient Kubernetes clusters with mutual TLS, container sandboxing, and declarative GitOps.",
+    "longDescription": "An intensive hands-on workshop focused on hardening cloud-native deployments. Participants construct multi-region Kubernetes clusters with automated secrets rotation, Cilium eBPF network policies, and continuous ArgoCD delivery pipelines.",
+    "date": "2026-11-21",
+    "startTime": "10:00",
+    "endTime": "16:00",
+    "location": "Cyber Tower 4, HITEC City Hyderabad",
+    "speaker": "Priya Sen",
+    "speakerTitle": "Staff SRE & Security Architect",
+    "speakerBio": "Priya is an author and maintainer of CNCF sandbox tools with 12 years of production experience in mission-critical distributed systems.",
+    "price": "₹2,499",
+    "priceValue": 2499,
+    "availableSeats": 12,
+    "totalSeats": 40,
+    "image": "assets/images/cloud_workshop.svg",
+    "alt": "Cloud mesh topology and interconnected service nodes diagram",
+    "requirements": [
+      "Familiarity with Docker and basic Linux command-line utilities",
+      "Experience running containerized microservices",
+      "Git client and SSH keys configured on laptop"
+    ],
+    "learningOutcomes": [
+      "Deploy eBPF-powered network security policies using Cilium",
+      "Automate workload configuration with ArgoCD and Kustomize",
+      "Configure automated certificate management with Vault",
+      "Design fault-tolerant failovers for high-availability clusters"
+    ],
+    "agenda": [
+      { "time": "10:00 - 11:15", "topic": "Zero-Trust Principles in Cloud-Native Topologies" },
+      { "time": "11:15 - 12:45", "topic": "Interactive Lab: Cilium eBPF Network Policies & Mutual TLS" },
+      { "time": "12:45 - 13:45", "topic": "Lunch & Technical Discussion" },
+      { "time": "13:45 - 15:15", "topic": "Hands-On GitOps: Rolling Declarative Updates with ArgoCD" },
+      { "time": "15:15 - 16:00", "topic": "Chaos Engineering Drills & Cluster Failure Recovery" }
+    ],
+    "duration": "6 Hours",
+    "format": "In-Person"
+  },
+  {
+    "id": "evt-design-systems",
+    "title": "Scalable Design Systems: From Tokens to Enterprise Components",
+    "category": "Design & UI/UX",
+    "type": "Workshop",
+    "description": "Bridge Figma and production code with design tokens, WCAG AA compliance, and fluid typography.",
+    "longDescription": "Learn how top engineering teams synchronize design tokens across platforms. We examine multi-brand theming, mathematical spacing systems, strict accessibility boundaries, and state-machine-driven headless component architectures.",
+    "date": "2026-11-28",
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "location": "Creative Lab Studio, Indiranagar Bengaluru & Virtual",
+    "speaker": "Neha Kulkarni",
+    "speakerTitle": "Head of Design Systems at DesignCraft",
+    "speakerBio": "Neha specializes in enterprise design systems, accessible UI foundations, and algorithmic color palettes for global consumer brands.",
+    "price": "₹1,499",
+    "priceValue": 1499,
+    "availableSeats": 25,
+    "totalSeats": 50,
+    "image": "assets/images/design_workshop.svg",
+    "alt": "Structured design token hierarchy and typography scale preview",
+    "requirements": [
+      "Basic understanding of modern HTML & CSS variables",
+      "Figma account (free tier is sufficient)",
+      "Interest in component architecture and accessibility guidelines"
+    ],
+    "learningOutcomes": [
+      "Construct multi-mode semantic design tokens for light and dark themes",
+      "Audit and enforce WCAG 2.1 AA color contrast and focus rings",
+      "Automate token export to CSS variables using Style Dictionary",
+      "Write resilient component states (empty, loading, error, selected)"
+    ],
+    "agenda": [
+      { "time": "14:00 - 14:45", "topic": "Foundational Design Token Architecture: Global vs Semantic" },
+      { "time": "14:45 - 16:00", "topic": "Building Accessible Component Primitives & Focus Management" },
+      { "time": "16:00 - 16:15", "topic": "Break" },
+      { "time": "16:15 - 17:30", "topic": "Synchronizing Figma Tokens with CSS Custom Properties" },
+      { "time": "17:30 - 18:00", "topic": "Design System Governance & Component Versioning" }
+    ],
+    "duration": "4 Hours",
+    "format": "Hybrid"
+  },
+  {
+    "id": "evt-cyber-sec",
+    "title": "Offensive Security & Modern Web Application Defense",
+    "category": "Cybersecurity",
+    "type": "Masterclass",
+    "description": "Simulate real-world attacks: prototype pollution, XSS mitigation, CSRF tokens, and CSP hardening.",
+    "longDescription": "Practical defensive engineering against the OWASP Top 10. Learn why textContent beats innerHTML, how to configure strict Content Security Policy headers, and how to safely sanitize untrusted input without sacrificing user experience.",
+    "date": "2026-12-05",
+    "startTime": "10:30",
+    "endTime": "15:30",
+    "location": "Security Operations Center, Whitefield Bengaluru",
+    "speaker": "Devashish Roy",
+    "speakerTitle": "Lead AppSec Researcher & Bug Bounty Hunter",
+    "speakerBio": "Devashish has identified critical vulnerabilities in leading SaaS products and trains security teams on secure SDLC and threat modeling.",
+    "price": "₹2,999",
+    "priceValue": 2999,
+    "availableSeats": 8,
+    "totalSeats": 30,
+    "image": "assets/images/security_workshop.svg",
+    "alt": "Cryptographic shield with layered defensive boundaries",
+    "requirements": [
+      "Basic web development knowledge (HTTP headers, cookies, DOM)",
+      "Laptop with Chrome and Postman or curl installed",
+      "Ethical mindset for authorized security demonstrations only"
+    ],
+    "learningOutcomes": [
+      "Identify and remediate stored, reflected, and DOM-based XSS",
+      "Construct bulletproof Content Security Policies (CSP v3)",
+      "Secure client storage (Cookies vs Web Storage security boundaries)",
+      "Conduct automated static analysis and dynamic input sanitization"
+    ],
+    "agenda": [
+      { "time": "10:30 - 11:45", "topic": "Deconstructing DOM-Based XSS & Execution Sinks" },
+      { "time": "11:45 - 13:00", "topic": "Live Penetration Sandbox: Defeating Insecure Sanitization" },
+      { "time": "13:00 - 13:45", "topic": "Networking Lunch" },
+      { "time": "13:45 - 15:00", "topic": "Hardening Storage, Session Tokens, and Modern CSP Headers" },
+      { "time": "15:00 - 15:30", "topic": "Secure Code Review Checklist & Certification" }
+    ],
+    "duration": "5 Hours",
+    "format": "In-Person"
+  },
+  {
+    "id": "evt-ai-agents",
+    "title": "Autonomous AI Agents & Large Language Model Workflows",
+    "category": "AI & Machine Learning",
+    "type": "Conference",
+    "description": "Build agentic reasoning loops, structured tool-calling pipelines, and vector retrieval systems.",
+    "longDescription": "An industry conference exploring production patterns for autonomous AI agents. Keynotes cover retrieval-augmented generation (RAG), semantic routing, multi-agent consensus protocols, and cost-efficient inference at scale.",
+    "date": "2026-12-12",
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "location": "Convention Center, BKC Mumbai & Livestream",
+    "speaker": "Dr. Kavita Nair",
+    "speakerTitle": "VP of Applied AI Research",
+    "speakerBio": "Dr. Kavita has published 20+ papers on neural retrieval and leads agentic system deployments for financial services.",
+    "price": "₹3,499",
+    "priceValue": 3499,
+    "availableSeats": 35,
+    "totalSeats": 120,
+    "image": "assets/images/ai_workshop.svg",
+    "alt": "Neural network graph with interconnected agentic reasoning paths",
+    "requirements": [
+      "Understanding of Python or TypeScript fundamentals",
+      "Familiarity with REST APIs and prompt engineering principles",
+      "Laptop with web browser for interactive demo sandboxes"
+    ],
+    "learningOutcomes": [
+      "Implement structured schema validation with function calling",
+      "Design resilient multi-agent orchestration architectures",
+      "Evaluate latency vs accuracy across open and proprietary model weights",
+      "Prevent prompt injection and implement safety guardrails"
+    ],
+    "agenda": [
+      { "time": "09:00 - 10:30", "topic": "Keynote: The Architecture of Production Autonomous Agents" },
+      { "time": "10:45 - 12:30", "topic": "Technical Track: Function Calling, JSON Schema & Semantic Routing" },
+      { "time": "12:30 - 13:30", "topic": "Buffet Lunch & Technology Showcase" },
+      { "time": "13:30 - 15:30", "topic": "Interactive Workshop: Building Resilient Tool Calling Loops" },
+      { "time": "15:45 - 17:00", "topic": "Panel Discussion: Safety, Guardrails & Economics of LLM Workflows" }
+    ],
+    "duration": "8 Hours",
+    "format": "Hybrid"
+  },
+  {
+    "id": "evt-leadership-eng",
+    "title": "Engineering Leadership: Strategy, Metrics & Team Velocity",
+    "category": "Leadership",
+    "type": "Panel",
+    "description": "Executive panel and roundtable on technical roadmap alignment, DORA metrics, and high-trust culture.",
+    "longDescription": "An executive gathering for senior engineers, tech leads, and engineering managers. Discuss real case studies on navigating technical debt, optimizing deployment frequency, and fostering psychological safety in high-stakes engineering cultures.",
+    "date": "2026-12-19",
+    "startTime": "15:00",
+    "endTime": "19:00",
+    "location": "Executive Boardroom, Aerocity New Delhi",
+    "speaker": "Vikramaditya Rao",
+    "speakerTitle": "Chief Technology Officer at HyperGrowth",
+    "speakerBio": "Vikramaditya has scaled engineering organizations from seed stage to public listing, managing 300+ engineers globally.",
+    "price": "₹999",
+    "priceValue": 999,
+    "availableSeats": 15,
+    "totalSeats": 35,
+    "image": "assets/images/leadership_workshop.svg",
+    "alt": "Strategic organizational compass and metrics dashboard representation",
+    "requirements": [
+      "Minimum 3 years of software engineering or technical leadership experience",
+      "Curiosity about team dynamics, DORA metrics, and architecture strategy"
+    ],
+    "learningOutcomes": [
+      "Calculate and optimize Four Core DORA Metrics for delivery velocity",
+      "Prioritize technical debt against feature delivery through business ROI",
+      "Lead structured architectural decision records (ADRs)",
+      "Establish mentorship ladders for individual contributors"
+    ],
+    "agenda": [
+      { "time": "15:00 - 15:45", "topic": "Opening Address: Alignment Between Engineering & Business Value" },
+      { "time": "15:45 - 17:00", "topic": "Panel: Scaling Teams Without Degrading Code Quality" },
+      { "time": "17:00 - 17:30", "topic": "Coffee & Peer Networking" },
+      { "time": "17:30 - 18:30", "topic": "Case Study Roundtable: When Refactoring Won the Enterprise Deal" },
+      { "time": "18:30 - 19:00", "topic": "Closing Remarks & Networking Reception" }
+    ],
+    "duration": "4 Hours",
+    "format": "In-Person"
+  }
+]

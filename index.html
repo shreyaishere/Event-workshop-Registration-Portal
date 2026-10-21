@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>roster - Event & Workshop Registration Portal</title>
+  <meta name="description" content="An original, responsive, accessible, and fully functional Event & Workshop Registration Portal named roster." />
+  
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="roster - Event & Workshop Registration Portal" />
+  <meta property="og:description" content="An original, responsive, accessible, and fully functional Event & Workshop Registration Portal named roster." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- jQuery CDN with graceful local fallback -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    if (typeof window.jQuery === 'undefined') {
+      console.warn('jQuery CDN unreachable; standard DOM fallback active.');
+    }
+  </script>
+
+  <!-- Core Application Script -->
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Keyboard-accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       1. Header & Navigation (Strict 3-Zone Contract)
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#home" class="brand-link" aria-label="roster homepage">
+        <span class="brand-signal">//</span>
+        <span>roster</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav id="site-nav" role="navigation" aria-label="Primary Navigation">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#workshops" class="nav-link">Workshops</a></li>
+          <li><a href="#schedule" class="nav-link">Schedule</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#security" class="nav-link">Security & Education</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Primary Registration Action -->
+        <a href="#register" class="btn btn-primary btn-sm">Register Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content Landmark
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         2. Hero & Statistics Section
+         ====================================================================== -->
+    <section id="home" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span>Curated Technical Masterclasses & Gatherings</span>
+            </div>
+            
+            <h1 id="hero-heading" class="hero-title">
+              Choose a room worth showing up for.
+            </h1>
+            
+            <p class="hero-copy">
+              Put the next idea on your calendar. A curated registration desk for ambitious engineers, designers, and leaders who want their next room to matter.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#events" class="btn btn-primary">Explore Events</a>
+              <a href="#register" class="btn btn-secondary">Register Now</a>
+            </div>
+
+            <!-- Hero Platform Statistics -->
+            <div class="stats-strip" aria-label="Platform Highlights">
+              <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Events & Workshops</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">1,500+</span>
+                <span class="stat-label">Active Participants</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Industry Speakers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Animated Inline SVG Visual -->
+          <div class="hero-visual-card">
+            <div class="hero-svg-wrapper">
+              <svg viewBox="0 0 540 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract orbital trajectory visualization representing curated event tracks">
+                <rect width="540" height="380" rx="12" fill="#0f172a"/>
+                <!-- Background Grid Coordinates -->
+                <g stroke="#1e293b" stroke-width="1" opacity="0.6">
+                  <line x1="60" y1="0" x2="60" y2="380"/>
+                  <line x1="140" y1="0" x2="140" y2="380"/>
+                  <line x1="220" y1="0" x2="220" y2="380"/>
+                  <line x1="300" y1="0" x2="300" y2="380"/>
+                  <line x1="380" y1="0" x2="380" y2="380"/>
+                  <line x1="460" y1="0" x2="460" y2="380"/>
+                  <line x1="0" y1="70" x2="540" y2="70"/>
+                  <line x1="0" y1="140" x2="540" y2="140"/>
+                  <line x1="0" y1="210" x2="540" y2="210"/>
+                  <line x1="0" y1="280" x2="540" y2="280"/>
+                  <line x1="0" y1="350" x2="540" y2="350"/>
+                </g>
+
+                <!-- Signal Orbits -->
+                <circle cx="270" cy="190" r="130" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="6 6"/>
+                <circle cx="270" cy="190" r="90" stroke="#2563eb" stroke-width="1.5" opacity="0.8"/>
+                <circle cx="270" cy="190" r="45" stroke="#38bdf8" stroke-width="2"/>
+
+                <!-- Central Hub -->
+                <circle cx="270" cy="190" r="14" fill="#2563eb" class="orbit-node"/>
+                <circle cx="270" cy="190" r="6" fill="#ffffff"/>
+
+                <!-- Dynamic Track Nodes -->
+                <g class="orbit-node">
+                  <circle cx="180" cy="130" r="9" fill="#0ea5e9"/>
+                  <circle cx="180" cy="130" r="4" fill="#ffffff"/>
+                  <text x="135" y="115" fill="#bae6fd" font-family="monospace" font-size="10">TRACK_01 // ARCH</text>
+                </g>
+
+                <g class="orbit-node">
+                  <circle cx="360" cy="240" r="9" fill="#10b981"/>
+                  <circle cx="360" cy="240" r="4" fill="#ffffff"/>
+                  <text x="320" y="270" fill="#a7f3d0" font-family="monospace" font-size="10">TRACK_02 // CLOUD</text>
+                </g>
+
+                <g class="orbit-node">
+                  <circle cx="370" cy="120" r="9" fill="#f59e0b"/>
+                  <circle cx="370" cy="120" r="4" fill="#ffffff"/>
+                  <text x="340" y="98" fill="#fde68a" font-family="monospace" font-size="10">TRACK_03 // SEC</text>
+                </g>
+
+                <!-- Signal Ray Crosshairs -->
+                <line x1="270" y1="20" x2="270" y2="360" stroke="#334155" stroke-width="1" stroke-dasharray="2 4"/>
+                <line x1="40" y1="190" x2="500" y2="190" stroke="#334155" stroke-width="1" stroke-dasharray="2 4"/>
+
+                <!-- Signal Status Badge -->
+                <rect x="24" y="24" width="160" height="34" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+                <circle cx="42" cy="41" r="5" fill="#10b981"/>
+                <text x="56" y="45" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">LIVE ADMISSIONS OPEN</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Event Discovery & Filtering Section (AJAX Powered)
+         ====================================================================== -->
+    <section id="events" class="section" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Discover What's Next</span>
+          <h2 id="events-heading" class="section-title">Upcoming Events & Workshops</h2>
+          <p class="section-subtitle">
+            Explore technical deep dives, architectural masterclasses, and executive panels. Filter by domain or search across sessions.
+          </p>
+        </div>
+
+        <!-- Filter Controls Toolbar -->
+        <div class="filter-bar" role="search" aria-label="Event catalog filters">
+          <!-- Row 1: Search, Category, and Sort -->
+          <div class="filter-row-top">
+            <div class="search-box-wrapper">
+              <label for="event-search-input" class="sr-only">Search events by title, topic, or speaker</label>
+              <input 
+                type="text" 
+                id="event-search-input" 
+                class="search-input" 
+                placeholder="Search events, topics, or speakers..." 
+                autocomplete="off"
+              />
+              <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search input">✕</button>
+            </div>
+
+            <!-- Category Filter -->
+            <div>
+              <label for="category-filter-select" class="sr-only">Filter by category</label>
+              <select id="category-filter-select" class="select-control">
+                <option value="all">All Categories</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Cloud & DevOps">Cloud & DevOps</option>
+                <option value="Design & UI/UX">Design & UI/UX</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="AI & Machine Learning">AI & Machine Learning</option>
+                <option value="Leadership">Leadership</option>
+              </select>
+            </div>
+
+            <!-- Sorting Options -->
+            <div>
+              <label for="sort-filter-select" class="sr-only">Sort events by date or price</label>
+              <select id="sort-filter-select" class="select-control">
+                <option value="default">Sort by: Default</option>
+                <option value="date-asc">Date: Earliest First</option>
+                <option value="date-desc">Date: Latest First</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Row 2: Event Type Pills & Metadata Counter -->
+          <div class="filter-row-bottom">
+            <div id="type-filter-group" class="type-filter-group" role="group" aria-label="Filter by event format">
+              <button type="button" class="type-filter-btn active" data-type="all">All Formats</button>
+              <button type="button" class="type-filter-btn" data-type="Workshop">Workshops</button>
+              <button type="button" class="type-filter-btn" data-type="Masterclass">Masterclasses</button>
+              <button type="button" class="type-filter-btn" data-type="Conference">Conferences</button>
+              <button type="button" class="type-filter-btn" data-type="Panel">Panels</button>
+            </div>
+
+            <div class="results-meta">
+              <span>Showing <span id="results-count" class="results-count">0</span> matching events</span>
+              <button type="button" id="btn-reset-filters" class="btn-reset-filters">Reset Filters</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Event Cards Grid -->
+        <div id="events-grid" class="events-grid" aria-live="polite">
+          <!-- Rendered dynamically by js/script.js via AJAX -->
+        </div>
+
+        <!-- ====================================================================
+             4. Selected Event Details Panel (Synchronized with Selection)
+             ==================================================================== -->
+        <section id="event-detail-section" style="margin-top: 60px;" aria-labelledby="detail-panel-heading">
+          <div class="section-header">
+            <span class="section-eyebrow">Curated Breakdown</span>
+            <h3 id="detail-panel-heading" class="section-title">Selected Event Details & Schedule</h3>
+            <p class="section-subtitle">
+              Inspect prerequisites, hourly agenda topics, speaker credentials, and venue logistics.
+            </p>
+          </div>
+
+          <div id="event-detail-panel" class="detail-panel" aria-live="polite">
+            <!-- Rendered dynamically by selectEvent() -->
+          </div>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Event Schedule Table Section (Semantic Responsive Table)
+         ====================================================================== -->
+    <section id="schedule" class="section" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Comprehensive Timetable</span>
+          <h2 id="schedule-heading" class="section-title">Master Event Schedule</h2>
+          <p class="section-subtitle">
+            A unified view of upcoming technical sessions, keynotes, and practical workshops across physical and virtual tracks.
+          </p>
+        </div>
+
+        <!-- Accessible Semantic Table Container -->
+        <div class="table-container" tabindex="0" role="region" aria-label="Event schedule table with horizontal scroll">
+          <table class="schedule-table">
+            <caption>roster 2026 Season Schedule & Track Allocations</caption>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Session & Format</th>
+                <th scope="col">Speaker</th>
+                <th scope="col">Venue / Track</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-tbody">
+              <!-- Dynamically populated from data/events.json -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Registration Form & Order Summary Section
+         ====================================================================== -->
+    <section id="register" class="section" aria-labelledby="register-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Reserve Your Seat</span>
+          <h2 id="register-heading" class="section-title">Participant Registration Desk</h2>
+          <p class="section-subtitle">
+            Secure your admission. All fields are client-validated in real time. Draft inputs are automatically preserved in your current browser session.
+          </p>
+        </div>
+
+        <!-- Registration Success State (Revealed via jQuery on valid submission) -->
+          <div class="success-badge-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title">Registration Successful!</h3>
+          <p class="success-copy">
+            Your registration has been confirmed and logged in browser storage. Please preserve your unique registration reference code.
+          </p>
+
+          <div class="reg-id-box">
+            <span>Registration ID:</span>
+            <span id="conf-reg-id" class="reg-id-val">ROS-2026-0000-0000</span>
+            <button type="button" id="btn-copy-id" class="btn btn-secondary btn-sm" aria-label="Copy registration ID to clipboard">Copy ID</button>
+          </div>
+
+          <div class="confirmation-card-grid">
+            <div class="conf-item">
+              <span class="conf-label">Participant</span>
+              <span id="conf-participant-name" class="conf-value">—</span>
+            </div>
+            <div class="conf-item">
+              <span class="conf-label">Event Selected</span>
+              <span id="conf-event-title" class="conf-value">—</span>
+            </div>
+            <div class="conf-item">
+              <span class="conf-label">Attendance Date</span>
+              <span id="conf-attendance-date" class="conf-value">—</span>
+            </div>
+            <div class="conf-item">
+              <span class="conf-label">Delegates / Format</span>
+              <span id="conf-count" class="conf-value">—</span>
+              <span id="conf-type" class="conf-label" style="margin-top: 4px;">—</span>
+            </div>
+          </div>
+
+          <div class="success-actions">
+            <button type="button" id="btn-register-another" class="btn btn-primary">Register Another Participant</button>
+            <button type="button" id="btn-back-events" class="btn btn-secondary">Back to Events</button>
+          </div>
+        </div>
+
+        <!-- Registration Form Layout Grid -->
+        <div id="registration-card-wrapper" class="registration-container">
+          <!-- Form Card -->
+          <div class="registration-card">
+            <!-- Session Storage Draft Status Indicator -->
+            <div class="storage-status-banner">
+              <span id="storage-status-text" class="storage-status-text">Draft saved automatically in sessionStorage.</span>
+              <span class="card-meta-label">Web Storage</span>
+            </div>
+
+            <form id="registration-form" novalidate aria-label="Event and Workshop Registration Form">
+              <div id="form-live-status" class="sr-only" role="status" aria-live="polite"></div>
+
+              <!-- Fieldset 1: Personal Details -->
+              <fieldset>
+                <legend>1. Delegate Credentials</legend>
+                <div class="form-grid-2">
+                  <!-- 1. Text input: Full Name -->
+                  <div class="form-group">
+                    <label for="reg-name" class="form-label">
+                      Full Name <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="reg-name" 
+                      name="fullName" 
+                      class="form-input" 
+                      placeholder="e.g. Shreya Shukla" 
+                      autocomplete="name" 
+                      required 
+                      aria-describedby="reg-name-error"
+                    />
+                    <div id="reg-name-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 2. Email input: Email Address -->
+                  <div class="form-group">
+                    <label for="reg-email" class="form-label">
+                      Email Address <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="reg-email" 
+                      name="email" 
+                      class="form-input" 
+                      placeholder="e.g. shreya@example.com" 
+                      autocomplete="email" 
+                      required 
+                      aria-describedby="reg-email-error"
+                    />
+                    <div id="reg-email-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 3. Telephone input: Phone Number -->
+                  <div class="form-group">
+                    <label for="reg-phone" class="form-label">
+                      Telephone <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="reg-phone" 
+                      name="phone" 
+                      class="form-input" 
+                      placeholder="e.g. +91 98765 43210" 
+                      autocomplete="tel" 
+                      required 
+                      aria-describedby="reg-phone-hint reg-phone-error"
+                    />
+                    <span id="reg-phone-hint" class="field-hint">Supports Indian & International digits (8 to 15 digits)</span>
+                    <div id="reg-phone-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 4. Password input: Account Security -->
+                  <div class="form-group">
+                    <label for="reg-password" class="form-label">
+                      Account Security Password <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="password" 
+                      id="reg-password" 
+                      name="password" 
+                      class="form-input" 
+                      placeholder="••••••••••••" 
+                      autocomplete="new-password" 
+                      required 
+                      aria-describedby="password-rules-list reg-password-error"
+                    />
+                    
+                    <!-- Real-Time Password Strength Meter -->
+                    <div class="password-meter-container">
+                      <div class="meter-track">
+                        <div id="password-meter-bar" class="meter-bar"></div>
+                      </div>
+                      
+                      <!-- 5 Mandatory Password Conditions -->
+                      <ul id="password-rules-list" class="password-rules-checklist" aria-label="Password complexity requirements">
+                        <li id="rule-length" class="rule-item invalid">
+                          <span class="rule-icon" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg>
+                          </span> 8+ characters
+                        </li>
+                        <li id="rule-uppercase" class="rule-item invalid">
+                          <span class="rule-icon" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg>
+                          </span> Uppercase letter
+                        </li>
+                        <li id="rule-lowercase" class="rule-item invalid">
+                          <span class="rule-icon" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg>
+                          </span> Lowercase letter
+                        </li>
+                        <li id="rule-number" class="rule-item invalid">
+                          <span class="rule-icon" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg>
+                          </span> Number digit
+                        </li>
+                        <li id="rule-special" class="rule-item invalid">
+                          <span class="rule-icon" aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle></svg>
+                          </span> Special character
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="reg-password-error" class="field-error" role="alert"></div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Fieldset 2: Event & Logistics -->
+              <fieldset>
+                <legend>2. Workshop Selection & Schedule</legend>
+                <div class="form-grid-2">
+                  <!-- 9. Select element: Event Selection -->
+                  <div class="form-group full-width">
+                    <label for="reg-event" class="form-label">
+                      Selected Event / Workshop <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <select id="reg-event" name="event" class="form-select" required aria-describedby="reg-event-error">
+                      <!-- Populated dynamically via JS -->
+                    </select>
+                    <div id="reg-event-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 5. Date input: Attendance Date -->
+                  <div class="form-group">
+                    <label for="reg-date" class="form-label">
+                      Attendance Date <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="date" 
+                      id="reg-date" 
+                      name="attendanceDate" 
+                      class="form-input" 
+                      required 
+                      aria-describedby="reg-date-error"
+                    />
+                    <div id="reg-date-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 6. Number input: Participant Count -->
+                  <div class="form-group">
+                    <label for="reg-count" class="form-label">
+                      Participant Count (1 - 8) <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input 
+                      type="number" 
+                      id="reg-count" 
+                      name="count" 
+                      class="form-input" 
+                      value="1" 
+                      min="1" 
+                      max="8" 
+                      required 
+                      aria-describedby="reg-count-error"
+                    />
+                    <div id="reg-count-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 7. Radio buttons: Attendance Type -->
+                  <div class="form-group full-width">
+                    <span class="form-label">
+                      Attendance Format <span class="required-mark" aria-hidden="true">*</span>
+                    </span>
+                    <div class="options-group" role="radiogroup" aria-label="Select attendance format">
+                      <label class="radio-label">
+                        <input type="radio" name="attendanceType" value="In-Person" checked />
+                        <span>In-Person (Physical Hall)</span>
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="attendanceType" value="Virtual" />
+                        <span>Virtual (Live Interactive Stream)</span>
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="attendanceType" value="Hybrid" />
+                        <span>Hybrid (Both Physical & Stream Archive)</span>
+                      </label>
+                    </div>
+                    <div id="reg-type-error" class="field-error" role="alert"></div>
+                  </div>
+
+                  <!-- 8. Checkboxes: Interests -->
+                  <div class="form-group full-width">
+                    <span class="form-label">
+                      Technical Interests (Choose at least one) <span class="required-mark" aria-hidden="true">*</span>
+                    </span>
+                    <div class="options-group" aria-label="Technical interests">
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="Web Architecture" checked />
+                        <span>Web Architecture</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="Cloud Infrastructure" />
+                        <span>Cloud Infrastructure</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="Design Systems" />
+                        <span>Design Systems</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="AppSec & Cryptography" />
+                        <span>AppSec & Defense</span>
+                      </label>
+                      <label class="checkbox-label">
+                        <input type="checkbox" name="interests" value="AI Reasoning Loops" />
+                        <span>AI Reasoning Loops</span>
+                      </label>
+                    </div>
+                    <div id="reg-interests-error" class="field-error" role="alert"></div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Fieldset 3: Attachments & Additional Notes -->
+              <fieldset>
+                <legend>3. Verification & Special Accommodations</legend>
+                <div class="form-group">
+                  <!-- 10. File input: Document Attachment -->
+                  <label for="reg-file" class="form-label">
+                    Identity / Student Verification Document (Optional)
+                  </label>
+                  <input 
+                    type="file" 
+                    id="reg-file" 
+                    name="document" 
+                    class="form-input" 
+                    accept=".pdf,.jpg,.jpeg,.png" 
+                    aria-describedby="reg-file-hint reg-file-error"
+                  />
+                  <span id="reg-file-hint" class="field-hint">PDF, JPG, or PNG (Max size: 5 MB). Validated client-side.</span>
+                  <div id="reg-file-error" class="field-error" role="alert"></div>
+                </div>
+
+                <!-- 11. Textarea: Special Requirements -->
+                <div class="form-group">
+                  <label for="reg-special" class="form-label">
+                    Special Accessibility or Dietary Requirements (Optional)
+                  </label>
+                  <textarea 
+                    id="reg-special" 
+                    name="specialRequirements" 
+                    class="form-textarea" 
+                    rows="3" 
+                    placeholder="e.g. Wheelchair access needed, sign language interpretation, vegan catering..."
+                  ></textarea>
+                </div>
+              </fieldset>
+
+              <!-- Form Action Buttons -->
+              <div class="form-actions">
+                <!-- 12. Submit Button -->
+                <button type="submit" id="reg-submit" class="btn btn-primary">Complete Registration</button>
+                <!-- 13. Reset Button -->
+                <button type="reset" id="reg-reset" class="btn btn-secondary">Reset Form</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Order Summary Sidebar -->
+          <div class="reg-sidebar">
+            <aside class="order-summary-box" aria-labelledby="order-summary-title">
+              <h3 id="order-summary-title" class="summary-title">Registration Summary</h3>
+              <div id="order-summary-content">
+                <!-- Dynamically populated by JS updateOrderSummary() -->
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Behind the Room — HTML5 Video Section
+         ====================================================================== -->
+    <section id="about" class="section" aria-labelledby="video-section-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Behind the Room</span>
+          <h2 id="video-section-title" class="section-title">The Craft of Curating High-Signal Rooms</h2>
+          <p class="section-subtitle">
+            Take a 60-second tour inside roster's speaker evaluation criteria, room architecture, and live technical workshops.
+          </p>
+        </div>
+
+        <div class="video-wrapper-card">
+          <div class="video-container">
+            <video 
+              controls 
+              preload="metadata" 
+              poster="/assets/images/video_poster.svg" 
+              aria-label="Video presentation exploring roster event production and speaker curation"
+            >
+              <!-- Primary demo source -->
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
+              <!-- Fallback text for unsupported browsers -->
+              <p>Your browser does not support the HTML5 video tag. You can inspect the video transcript or download the session recording directly.</p>
+            </video>
+          </div>
+          <div class="video-caption-bar">
+            <h3 class="video-title">Architecting Technical Communities with Intent</h3>
+            <p class="video-description">
+              Every roster session is built around interactive terminal sandboxes, production teardowns, and peer review. We eliminate vanity keynotes in favor of actionable, rigorous engineering practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. Educational Comparison: Cookies vs. localStorage vs. sessionStorage
+         ====================================================================== -->
+    <section id="security" class="section" aria-labelledby="storage-section-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Knowledge Synthesis</span>
+          <h2 id="storage-section-title" class="section-title">Browser Storage Architecture: Cookies vs Web Storage</h2>
+          <p class="section-subtitle">
+            An in-depth conceptual comparison satisfying MCA-1A Web Technology syllabus requirements on client-side state persistence.
+          </p>
+        </div>
+
+        <div class="storage-comparison-grid">
+          <!-- Card 1: HTTP Cookies -->
+          <article class="storage-card">
+            <span class="storage-badge">Network & Sessions</span>
+            <h3 class="storage-type-title">HTTP Cookies</h3>
+            <ul class="storage-feature-list">
+              <li><span><strong>Capacity:</strong> ~4 KB per domain</span></li>
+              <li><span><strong>Lifetime:</strong> Configurable via <code>Expires</code> or <code>Max-Age</code></span></li>
+              <li><span><strong>HTTP Traffic:</strong> Sent automatically with every matching HTTP request header</span></li>
+              <li><span><strong>Security:</strong> Protected via <code>HttpOnly</code> and <code>Secure</code> flags against XSS/MITM</span></li>
+              <li><span><strong>Best For:</strong> Session IDs, server authentication tokens, CSRF protection</span></li>
+            </ul>
+            <div class="storage-verdict">
+              roster usage: Not used for client state to avoid unnecessary HTTP payload overhead.
+            </div>
+          </article>
+
+          <!-- Card 2: localStorage -->
+          <article class="storage-card">
+            <span class="storage-badge">Persistent Client Storage</span>
+            <h3 class="storage-type-title">localStorage</h3>
+            <ul class="storage-feature-list">
+              <li><span><strong>Capacity:</strong> ~5 MB to 10 MB per origin</span></li>
+              <li><span><strong>Lifetime:</strong> Persists indefinitely across browser restarts until cleared</span></li>
+              <li><span><strong>HTTP Traffic:</strong> Purely client-side; never sent over HTTP request headers</span></li>
+              <li><span><strong>Security:</strong> Accessible via JavaScript; vulnerable if untrusted scripts run</span></li>
+              <li><span><strong>Best For:</strong> User theme preferences, offline caches, non-sensitive history</span></li>
+            </ul>
+            <div class="storage-verdict">
+              roster usage: Persists <code>eventPortalTheme</code> and non-sensitive confirmed registration log.
+            </div>
+          </article>
+
+          <!-- Card 3: sessionStorage -->
+          <article class="storage-card">
+            <span class="storage-badge">Tab-Scoped Transient Storage</span>
+            <h3 class="storage-type-title">sessionStorage</h3>
+            <ul class="storage-feature-list">
+              <li><span><strong>Capacity:</strong> ~5 MB per origin per browser tab</span></li>
+              <li><span><strong>Lifetime:</strong> Scoped strictly to the lifetime of the active browser tab</span></li>
+              <li><span><strong>HTTP Traffic:</strong> Purely client-side; never sent over HTTP request headers</span></li>
+              <li><span><strong>Security:</strong> Isolated per tab; cleared automatically when tab is closed</span></li>
+              <li><span><strong>Best For:</strong> Multi-step form wizards, registration drafts, transient view state</span></li>
+            </ul>
+            <div class="storage-verdict">
+              roster usage: Auto-saves <code>registrationDraft</code> (strictly excluding passwords).
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. CSS Box Model Demonstration (Identifiable Target: #box-model-demo)
+         ====================================================================== -->
+    <section class="section" aria-labelledby="box-model-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">CSS3 Foundations</span>
+          <h2 id="box-model-heading" class="section-title">The CSS Box Model Demonstration</h2>
+          <p class="section-subtitle">
+            Every element in the browser viewport is structured as a physical stack: <code>Content → Padding → Border → Margin</code>.
+          </p>
+        </div>
+
+        <div class="box-model-section-grid">
+          <!-- Identifiable Inspection Target -->
+          <div>
+            <div id="box-model-demo" role="region" aria-label="Visual CSS Box Model Inspection Target">
+              <span style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">
+                MARGIN (32px Outer Breathing Space)
+              </span>
+              <div style="font-size: 0.8125rem; font-weight: 700; color: #1d4ed8; margin-bottom: 8px;">
+                BORDER (12px Solid Primary Blue #2563eb)
+              </div>
+              <div class="box-layer-visual">
+                <span style="font-size: 0.75rem; font-weight: 700; color: #0369a1; display: block; margin-bottom: 8px;">
+                  PADDING (28px Internal Clearance)
+                </span>
+                <div class="box-content-core">
+                  CONTENT BOX
+                  <div style="font-size: 0.75rem; font-weight: 500; opacity: 0.9; margin-top: 4px;">
+                    Width × Height (Text, Nodes, Child Elements)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chrome DevTools Inspection Guide -->
+          <div class="devtools-instructions-card">
+            <h3 class="summary-title">Chrome DevTools Inspection Protocol</h3>
+            <p style="font-size: 0.9375rem; color: var(--color-text-secondary); line-height: 1.6;">
+              Follow these authentic steps during the practical assessment viva to inspect this exact target:
+            </p>
+            <ol class="devtools-step-list">
+              <li>Open the running portal in Google Chrome.</li>
+              <li>Right-click directly on the colored Box Model target to the left and select <strong>Inspect</strong>.</li>
+              <li>In the Chrome DevTools Elements panel, navigate to the <strong>Computed</strong> tab.</li>
+              <li>Locate the interactive multi-colored box model diagram illustrating margin, border, padding, and content dimensions.</li>
+              <li>Observe how <code>box-sizing: border-box</code> regulates total element footprint calculations.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. Client-Side XSS Protection & Interactive Security Sandbox
+         ====================================================================== -->
+    <section class="section" aria-labelledby="xss-section-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Defensive Application Security</span>
+          <h2 id="xss-section-heading" class="section-title">Client-Side XSS Protection & Sanitization</h2>
+          <p class="section-subtitle">
+            Demonstrating why roster relies strictly on safe DOM properties like <code>textContent</code> rather than executable sinks like <code>innerHTML</code>.
+          </p>
+        </div>
+
+        <div class="security-card">
+          <p style="font-size: 0.9375rem; color: var(--color-text-secondary); line-height: 1.6;">
+            When untrusted user input (such as names, comments, or draft values) is inserted into the DOM via <code>innerHTML</code>, the browser parser executes any embedded <code>&lt;script&gt;</code> or <code>&lt;img onerror&gt;</code> payloads. By using <code>document.createElement()</code> and <code>element.textContent</code>, user input is strictly treated as text characters, preventing DOM-based Cross-Site Scripting (XSS).
+          </p>
+
+          <div class="security-demo-grid">
+            <!-- Test Input Sandbox -->
+            <div class="payload-input-box">
+              <label for="xss-test-input" class="form-label">
+                Security Test String (Standard OWASP XSS Vector)
+              </label>
+              <input 
+                type="text" 
+                id="xss-test-input" 
+                class="form-input" 
+                value="&lt;img src=x onerror=alert(1)&gt;" 
+                aria-describedby="xss-hint"
+              />
+              <span id="xss-hint" class="field-hint">Edit or execute this payload to observe browser behavior</span>
+              <button type="button" id="btn-run-xss-test" class="btn btn-secondary btn-sm" style="margin-top: 12px;">
+                Test Safe DOM Insertion
+              </button>
+            </div>
+
+            <!-- Safe Output Sandbox -->
+            <div class="payload-input-box">
+              <span class="form-label">Rendered via <code>textContent</code> (Safe DOM API):</span>
+              <div id="xss-safe-output" class="safe-render-output" aria-live="polite"></div>
+              <span class="field-hint" style="color: var(--color-status-teal); margin-top: 8px; display: block;">
+                ✓ Verified: Renders safely as literal text. Zero JavaScript execution.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. FAQ Section (jQuery Accordion Enhancement)
+         ====================================================================== -->
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <span class="section-eyebrow">Frequently Asked Questions</span>
+          <h2 id="faq-heading" class="section-title">Common Inquiries & Guidelines</h2>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+            Details regarding session attendance, prerequisite setups, cancellation policies, and certifications.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What technical prerequisites do I need for hands-on masterclasses?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Every masterclass provides an explicit prerequisites checklist in the event details view. In general, attendees should have a laptop with modern Node.js and Google Chrome installed. Terminal utilities and code sandboxes are supplied prior to the session.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How are registration drafts preserved across tab reloads?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              roster utilizes the HTML5 <code>sessionStorage</code> API. As you type into registration fields, inputs are debounced and serialized into a temporary draft. For security compliance, password fields and binary file contents are strictly excluded from storage.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can I switch between In-Person and Virtual attendance?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, hybrid ticket holders can participate in-person or join via our low-latency livestream stream. All participants receive recording archives and slide decks within 24 hours of session completion.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Are certificates of completion issued after workshops?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes, delegates who attend the scheduled workshop and verify their participation receive a signed digital credential verified via their unique Registration ID (e.g. <code>ROS-2026-XXXX-XXXX</code>).
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       12. Footer Section
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-link" aria-label="roster homepage">
+            <span class="brand-signal">//</span>
+            <span>roster</span>
+          </a>
+          <p class="footer-brand-desc">
+            A curated registration desk for ambitious technologists, architects, and designers. Choose a room worth showing up for.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#schedule">Master Schedule</a></li>
+            <li><a href="#register">Register Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Syllabus Topics</h4>
+          <ul class="footer-links">
+            <li><a href="#security">Cookies vs Storage</a></li>
+            <li><a href="#box-model-demo">CSS Box Model</a></li>
+            <li><a href="#security">Client-Side XSS</a></li>
+            <li><a href="#about">HTML5 Video</a></li>
+            <li><a href="#faq">jQuery Accordion</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">MCA-1A Practical Assessment</h4>
+          <p style="font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 12px;">
+            Course: MCS3014 — Web Technology & Server-Side Scripting.<br />
+            Student Demonstration Portal.<br />
+            Runs offline via local Node.js server.
+          </p>
+          <span style="font-size: 0.75rem; color: var(--color-text-muted);">
+            Local Demo Platform — Client-side simulated registrations.
+          </span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 roster Event & Workshop Portal. All rights reserved.
+        </div>
+        <div>
+          Engineered with semantic HTML5, CSS3 Grid/Flexbox, Vanilla JS, AJAX & jQuery.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

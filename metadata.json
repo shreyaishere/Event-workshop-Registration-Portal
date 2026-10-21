@@ -1,0 +1,6 @@
+{
+  "name": "roster - Event & Workshop Registration Portal",
+  "description": "An original, responsive, accessible, and fully functional Event & Workshop Registration Portal named roster.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

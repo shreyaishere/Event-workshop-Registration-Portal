@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <rect width="600" height="360" fill="#090d16"/>
+  <!-- Defensive Shield -->
+  <g transform="translate(180, 50)">
+    <path d="M 120 10 L 220 50 L 220 150 Q 220 230 120 270 Q 20 230 20 150 L 20 50 Z" fill="#111827" stroke="#2563eb" stroke-width="2.5"/>
+    <path d="M 120 30 L 200 65 L 200 145 Q 200 215 120 250 Q 40 215 40 145 L 40 65 Z" fill="#1e293b" opacity="0.6"/>
+    <!-- Lock / Keyhole -->
+    <circle cx="120" cy="120" r="24" fill="#3b82f6"/>
+    <rect x="112" y="125" width="16" height="30" rx="3" fill="#3b82f6"/>
+    <circle cx="120" cy="120" r="10" fill="#090d16"/>
+    <rect x="116" y="125" width="8" height="15" fill="#090d16"/>
+  </g>
+  <!-- Security Badges -->
+  <g transform="translate(420, 90)">
+    <rect width="140" height="40" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#34d399" font-family="monospace" font-size="11">textContent: SAFE</text>
+  </g>
+  <g transform="translate(420, 150)">
+    <rect width="140" height="40" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#fb7185" font-family="monospace" font-size="11">innerHTML: BLOCKED</text>
+  </g>
+  <g transform="translate(420, 210)">
+    <rect width="140" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="14" y="24" fill="#7dd3fc" font-family="monospace" font-size="11">CSP v3: STRICT</text>
+  </g>
+  <g transform="translate(40, 130)">
+    <rect width="120" height="50" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="15" y="25" fill="#94a3b8" font-family="monospace" font-size="10">OWASP TOP 10</text>
+    <text x="15" y="40" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">AUDIT READY</text>
+  </g>
+</svg>

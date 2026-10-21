@@ -1,0 +1,21 @@
+{
+  "name": "roster-event-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "start": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test test/logic.test.js",
+    "clean": "rm -rf dist",
+    "lint": "node --check server.js vite.config.js js/script.js js/logic.js test/logic.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "vite": "^8.3.0"
+  },
+  "devDependencies": {}
+}
